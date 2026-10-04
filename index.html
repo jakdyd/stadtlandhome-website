@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StadtLandHome Immobilien | Ihr Immobilienmakler in Erlangen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Immobilien Verkaufsformular - Ganz oben auf der Seite -->
+    <section class="property-form-section" id="immobilie-verkaufen">
+        <div class="container">
+            <div class="form-header">
+                <h2>🚀 Ihre Immobilie verkaufen?</h2>
+                <p>Erhalten Sie eine kostenlose Wertermittlung – schnell, unverbindlich und persönlich.</p>
+            </div>
+            <form class="property-form" action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Ihr Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail-Adresse *</label>
+                        <input type="email" id="email" name="email" required placeholder="max@beispiel.de">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Telefonnummer</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+49 123 456789">
+                    </div>
+                    <div class="form-group">
+                        <label for="property-type">Art der Immobilie *</label>
+                        <select id="property-type" name="property_type" required>
+                            <option value="">Bitte wählen...</option>
+                            <option value="haus">Haus</option>
+                            <option value="wohnung">Wohnung</option>
+                            <option value="grundstueck">Grundstück</option>
+                            <option value="gewerbe">Gewerbeimmobilie</option>
+                            <option value="sonstige">Sonstige</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="location">Ort der Immobilie *</label>
+                        <input type="text" id="location" name="location" required placeholder="z.B. Erlangen, Forchheim, Nürnberg">
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Wohnfläche (ca. m²)</label>
+                        <input type="number" id="size" name="size" placeholder="120">
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Nachricht / Weitere Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Beschreiben Sie Ihre Immobilie kurz..."></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn-primary">Jetzt kostenlos bewerten lassen</button>
+                    <p class="privacy-note">Mit dem Absenden stimmen Sie unserer Datenschutzerklärung zu.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span class="logo-text">StadtLandHome</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#start">Start</a></li>
+                <li><a href="#immobilien">Immobilien</a></li>
+                <li><a href="#eigentuemer">Für Eigentümer</a></li>
+                <li><a href="#interessenten">Für Interessenten</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <a href="#immobilie-verkaufen" class="btn-nav">Immobilie verkaufen</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="start">
+        <div class="hero-content">
+            <h1>StadtLandHome Immobilien</h1>
+            <p class="hero-subtitle">Ihr Immobilienanliegen in starken Händen</p>
+            <p class="hero-text">Inhabergeführt, vertrauensvoll, mit langjähriger Erfahrung und fundiertem Fachwissen. Wir entwickeln maßgeschneiderte Lösungen für unsere Kunden in Erlangen, Forchheim und der gesamten Metropolregion.</p>
+            <div class="hero-buttons">
+                <a href="#immobilie-verkaufen" class="btn-primary">Immobilie verkaufen</a>
+                <a href="#immobilien" class="btn-secondary">Immobilien suchen</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-placeholder">🏡</div>
+        </div>
+    </header>
+
+    <!-- Leistungen -->
+    <section class="services" id="leistungen">
+        <div class="container">
+            <div class="section-header">
+                <h2>Wir bringen Ordnung in die komplexe Welt der Immobilien</h2>
+                <p>Vier Wände und ein Dach haben sie alle, doch keine Immobilie gleicht der anderen. Ebenso individuell sind die Wünsche, Vorstellungen und Herausforderungen ihrer jetzigen oder zukünftigen Besitzer.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Wertermittlung</h3>
+                    <p>Sie möchten wissen, was Ihre Immobilie wert ist? Erhalten Sie eine fundierte Marktanalyse und eine realistische Preiseinschätzung.</p>
+                    <a href="#" class="service-link">Mehr erfahren →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Immobiliensuche</h3>
+                    <p>Finden Sie Ihr neues Zuhause! Entdecken Sie unsere aktuellen Immobilienangebote und lassen Sie sich persönlich beraten.</p>
+                    <a href="#immobilien" class="service-link">Immobilien ansehen →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Vermietung & Verkauf</h3>
+                    <p>Sie haben bereits eine Immobilie? Wir übernehmen zuverlässig und kompetent die Vermietung oder den Verkauf in Ihrem Auftrag.</p>
+                    <a href="#eigentuemer" class="service-link">Mehr erfahren →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Für Eigentümer -->
+    <section class="content-section alt-bg" id="eigentuemer">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-text">
+                    <h2>Für Eigentümer: Was haben Sie mit Ihrer Immobilie vor?</h2>
+                    <p>Haben Sie darauf bereits eine Antwort? Falls nicht, ist das völlig in Ordnung. Wir stehen Ihnen mit unserer Erfahrung zur Seite.</p>
+                    <p>Ob Sie vermieten, verkaufen oder zunächst nur eine fundierte Wertermittlung wünschen: Wir beraten Sie individuell und transparent.</p>
+                    <ul class="feature-list">
+                        <li>✓ Professionelle Wertermittlung</li>
+                        <li>✓ Maßgeschneiderte Vermarktungsstrategie</li>
+                        <li>✓ Qualifizierte Käufer/ Mieter suchen</li>
+                        <li>✓ Begleitung bis zum Notartermin</li>
+                    </ul>
+                    <a href="#immobilie-verkaufen" class="btn-primary">Jetzt beraten lassen</a>
+                </div>
+                <div class="content-visual">
+                    <div class="visual-placeholder">🏘️</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Für Interessenten -->
+    <section class="content-section" id="interessenten">
+        <div class="container">
+            <div class="content-grid reverse">
+                <div class="content-visual">
+                    <div class="visual-placeholder">🔑</div>
+                </div>
+                <div class="content-text">
+                    <h2>Für Interessenten: Lassen Sie uns gemeinsam ein neues Kapitel aufschlagen</h2>
+                    <p>Träumen Sie von den eigenen vier Wänden? Wir helfen Ihnen dabei! Ob Wohnimmobilie oder attraktive Kapitalanlage im wirtschaftsstarken Bayern.</p>
+                    <p>Wir begleiten Interessenten von der ersten Beratung über die Auswahl passender Objekte bis hin zu Besichtigungen und dem Kaufvertragsabschluss.</p>
+                    <ul class="feature-list">
+                        <li>✓ Individuelle Bedarfsanalyse</li>
+                        <li>✓ Aktuelle Immobilienangebote</li>
+                        <li>✓ Professionelle Besichtigungen</li>
+                        <li>✓ Unterstützung bei der Finanzierung</li>
+                    </ul>
+                    <a href="#immobilien" class="btn-primary">Immobilien ansehen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immobilien Referenzen -->
+    <section class="properties" id="immobilien">
+        <div class="container">
+            <div class="section-header">
+                <h2>Auszug aus unseren Referenzen</h2>
+                <p>10 gefundene Immobilien</p>
+            </div>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <div class="property-image">
+                        <span class="property-badge verkauft">Verkauft</span>
+                        <div class="property-placeholder">🏠</div>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">📍 Nürnberg / Nordwestliche Außenstadt</p>
+                        <h4>Ihr Weg ins Eigenheim – Tolles Reihenendhaus in Boxdorf</h4>
+                        <div class="property-details">
+                            <span>🛏️ 4 Zimmer</span>
+                            <span>🛁 1 Bad</span>
+                            <span>📐 90 m²</span>
+                        </div>
+                        <p class="property-id">ImmoNr: YP608</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image">
+                        <span class="property-badge verkauft">Verkauft</span>
+                        <div class="property-placeholder">🏡</div>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">📍 Erlangen</p>
+                        <h4>Ihr perfektes Familiendomizil – Ein Zuhause zum Wohlfühlen</h4>
+                        <div class="property-details">
+                            <span>🛏️ 5 Zimmer</span>
+                            <span>🛁 2 Bäder</span>
+                            <span>📐 136 m²</span>
+                        </div>
+                        <p class="property-id">ImmoNr: NR269</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image">
+                        <div class="property-placeholder">🏢</div>
+                    </div>
+                    <div class="property-info">
+                        <p class="property-location">📍 Erlangen</p>
+                        <h4>Willkommen im Röthelheimpark – Moderne 4-Zimmer-Wohnung</h4>
+                        <div class="property-details">
+                            <span>🛏️ 4 Zimmer</span>
+                            <span>🛁 2 Bäder</span>
+                            <span>📐 128 m²</span>
+                        </div>
+                        <p class="property-id">ImmoNr: OU174</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-secondary">Alle Immobilien ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Unser Team</h2>
+                <p>Das Gesicht hinter StadtLandHome Immobilien</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="assets/team.jpg" alt="Das StadtLandHome Team" class="team-photo">
+                    </div>
+                    <div class="team-info">
+                        <h3>Ihr Team vor Ort</h3>
+                        <p class="team-role">Immobilienexperten in Erlangen & Region</p>
+                        <p class="team-description">Persönlich, erfahren und immer für Sie da. Wir freuen uns darauf, Sie kennenzulernen!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="contact" id="kontakt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kontaktieren Sie uns</h2>
+                <p>Wir freuen uns darauf, Sie persönlich kennenzulernen!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Musterstraße 123<br>91054 Erlangen</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+49 123 456789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <h4>E-Mail</h4>
+                            <p>info@stadtlandhome.de</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-hours">
+                    <h4>Öffnungszeiten</h4>
+                    <table class="hours-table">
+                        <tr><td>Mo - Fr:</td><td>09:00 - 18:00 Uhr</td></tr>
+                        <tr><td>Sa:</td><td>10:00 - 14:00 Uhr</td></tr>
+                        <tr><td>So:</td><td>Nach Vereinbarung</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🏠</span>
+                    <span class="logo-text">StadtLandHome</span>
+                    <p>Ihr Immobilienmakler in Erlangen und Umgebung</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quicklinks</h4>
+                    <ul>
+                        <li><a href="#immobilie-verkaufen">Immobilie verkaufen</a></li>
+                        <li><a href="#immobilien">Immobilien</a></li>
+                        <li><a href="#eigentuemer">Für Eigentümer</a></li>
+                        <li><a href="#interessenten">Für Interessenten</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="#">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StadtLandHome Immobilien. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
